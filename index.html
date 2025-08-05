@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+
+</head>
+<body>
+<script src="index.js"></script>
+  <div class="navbar-top">
+    <div class="logo">🛍️ <span>Re</span><strong>Trade</strong></div>
+
+    <div class="search-section">
+      <input type="text" placeholder="Find product" class="search-input" />
+      <!-- <select class="category-select">
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>furniture</option>
+        <option>Fashion</option>
+        <option>Bike</option>
+        <option>Books</option>
+        <option>Vehicle</option>
+
+      </select> -->
+      <button class="search-btn">Search</button>
+    </div>
+
+    <div class="nav-icons">
+      <a href="orders.html" class="orders-link">
+  <div>
+    <i class="fas fa-box"></i>
+    <span>My Orders</span>
+  </div>
+</a>
+
+      <a href="saved.html" class="saved-link">
+  <div>
+    <i class="fas fa-heart"></i>
+    <span>Saved</span>
+  </div>
+</a>
+
+      <a href="cart.html" class="cart-link">
+  <div>
+    <i class="fas fa-shopping-cart"></i>
+    <span>My Cart</span>
+  </div>
+</a>
+
+      <div><i class="fas fa-user"></i><span>Sign in</span></div>
+    </div>
+    <!-- <div class="dark-mode-toggle">
+  <label class="switch">
+    <input type="checkbox" id="darkModeSwitch">
+    <span class="slider round"></span>
+  </label>
+</div> -->
+  </div>
+
+  <div class="navbar-bottom">
+    <div class="bottom-left">
+    </div>
+    <div class="bottom-menu">
+      <a href="#">Hot offers</a>
+      <a href="#">Services</a>
+      <a href="#">Bestsellers</a>
+      <a href="#">Gift boxes</a>
+      <a href="#">Help ▾</a>
+    </div>
+    <div class="bottom-right">
+      <!-- <img src="https://flagcdn.com/w40/in.png -->
+<!-- " alt="Flag" /> -->
+      <!-- <span> ▾</span> -->
+<div class="bottom-right">
+  <img id="selected-flag" src="https://flagcdn.com/w40/in.png" alt="Flag" />
+  <div class="dropdown">
+    <a href="#" id="selected-label">India ▾</a>
+    <div class="dropdown-content" id="dropdown-content">
+      <a href="#" data-code="us"><img src="https://flagcdn.com/w40/us.png" alt="US" /> United States</a>
+      <a href="#" data-code="gb"><img src="https://flagcdn.com/w40/gb.png" alt="UK" /> United Kingdom</a>
+      <a href="#" data-code="ca"><img src="https://flagcdn.com/w40/ca.png" alt="Canada" /> Canada</a>
+      <a href="#" data-code="au"><img src="https://flagcdn.com/w40/au.png" alt="Australia" /> Australia</a>
+      <a href="#" data-code="de"><img src="https://flagcdn.com/w40/de.png" alt="Germany" /> Germany</a>
+      <a href="#" data-code="fr"><img src="https://flagcdn.com/w40/fr.png" alt="France" /> France</a>
+      <a href="#" data-code="jp"><img src="https://flagcdn.com/w40/jp.png" alt="Japan" /> Japan</a>
+      <a href="#" data-code="cn"><img src="https://flagcdn.com/w40/cn.png" alt="China" /> China</a>
+      <a href="#" data-code="br"><img src="https://flagcdn.com/w40/br.png" alt="Brazil" /> Brazil</a>
+      <a href="#" data-code="za"><img src="https://flagcdn.com/w40/za.png" alt="South Africa" /> South Africa</a>
+      <a href="#" data-code="ru"><img src="https://flagcdn.com/w40/ru.png" alt="Russia" /> Russia</a>
+      <a href="#" data-code="in"><img src="https://flagcdn.com/w40/in.png" alt="India" /> India</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <section class="category-section">
+  <h2 class="heading">-: Browse by Category :-</h2>
+
+  <div class="category-wrapper">
+    <div class="card-container" id="category-scroll">
+      
+      <div class="category-card">
+        <img src="face cards/electronic.jpg" alt="Electronics">
+        <p>Electronics</p>
+      </div>
+
+      <div class="category-card">
+        <img src="face cards/furniture.jpg" alt="Furniture">
+        <p>Furniture</p>
+      </div>
+
+      <div class="category-card">
+        <img src="face cards/fashion.jpg" alt="Fashion">
+        <p>Fashion</p>
+      </div>
+
+      <div class="category-card">
+        <img src="face cards/bike.jpg" alt="Bikes">
+        <p>Bikes</p>
+      </div>
+
+      <div class="category-card">
+        <img src="face cards/book.jpg" alt="Books">
+        <p>Books</p>
+      </div>
+
+      <div class="category-card">
+        <img src="face cards/car.jpg" alt="Vehicles">
+        <p>Vehicles</p>
+      </div>
+
+    </div>
+
+    <button class="scroll-arrow" onclick="scrollRight()">➤</button>
+  </div>
+</section>
+
+    </div>
+  </section>
+
+
+  <div class="recommendation-wrapper">
+  <div class="recommendation-label">
+    <p>Recommended for You</p>
+  </div>
+
+  <div class="recommendation-section">
+    <div class="recommendation-scroll">
+      <div class="recommendation-card">
+        <img src="face cards/electronic.jpg" alt="Headphones" />
+        <p>Headphones</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/book.jpg" alt="Book" />
+        <p>Book</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/bike.jpg" alt="Bike" />
+        <p>Bike</p>
+      </div>
+
+       <div class="recommendation-card">
+        <img src="face cards/electronic.jpg" alt="Headphones" />
+        <p>Headphones</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/book.jpg" alt="Book" />
+        <p>Book</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/bike.jpg" alt="Bike" />
+        <p>Bike</p>
+      </div>
+
+       <div class="recommendation-card">
+        <img src="face cards/electronic.jpg" alt="Headphones" />
+        <p>Headphones</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/book.jpg" alt="Book" />
+        <p>Book</p>
+      </div>
+      <div class="recommendation-card">
+        <img src="face cards/bike.jpg" alt="Bike" />
+        <p>Bike</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<section class="wishlist-section">
+  <h2>My Wishlist</h2>
+  <div class="wishlist-container" id="wishlist">
+    <!-- Wishlist items will be dynamically inserted here -->
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: e23cseu1888@bennett.edu.in</p>
+      <p>Phone: +91 9120731190</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a><br>
+      <a href="#">LinkedIn</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Subscribe</h4>
+      <input type="email" placeholder="Your Email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MyWebsite. All rights reserved.</p>
+  </div>
+</footer>
+
+       
+
+</body>
+</html>
