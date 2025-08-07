@@ -1,12 +1,79 @@
-<!-- cart.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Cart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css" />
 </head>
 <body>
-  <h1>Your Cart</h1>
-  <p>This is where your cart items will be displayed.</p>
-</body>
-</html>
+  <header>
+    <h1>Your Cart</h1>
+  </header>
+
+  <main class="cart-container">
+  <div class="cart-item">
+    <img src="face cards/bike.jpg" alt="Product Image" />
+    <div class="item-details">
+      <h2>Bike</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <span class="price">₹1200</span>
+    </div>
+    <div class="item-actions">
+      <input type="number" value="1" min="1" />
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="face cards/book.jpg" alt="Product Image" />
+    <div class="item-details">
+      <h2>Book</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <span class="price">₹900</span>
+    </div>
+    <div class="item-actions">
+      <input type="number" value="2" min="1" />
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="face cards/fashion.jpg" alt="Product Image" />
+    <div class="item-details">
+      <h2>Fashion</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <span class="price">₹600</span>
+    </div>
+    <div class="item-actions">
+      <input type="number" value="1" min="1" />
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <img src="face cards/furniture.jpg" alt="Product Image" />
+    <div class="item-details">
+      <h2>Furniture</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <span class="price">₹1500</span>
+    </div>
+    <div class="item-actions">
+      <input type="number" value="1" min="1" />
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  
+
+</main>
+<div class="buy-container">
+  <button class="buy-btn">Buy Now</button>
+</div>
+
+
+
+
